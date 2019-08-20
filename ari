@@ -1,0 +1,138 @@
+unbindall
+echo "                       4RCHH CONFIG                           "
+echo "██████████████████████████████████████████████████████████████"
+
+//==================================================================
+//=============== JUMP THROW =======================================
+//==================================================================
+
+alias "+jumpthrow" "+jump;-attack";
+alias "-jumpthrow" "-jump"; 
+bind N "+jumpthrow"
+
+//==================================================================
+//=============== PULAR NO SCROLL ==================================
+//==================================================================
+
+bind "MWHEELDOWN"   "+jump"
+bind "MWHEELUP"     "+jump"
+
+//==================================================================
+//=============== VOICE ============================================
+//==================================================================
+
+bind "t" "+voicerecord"
+voice_enable "1"
+voice_scale "0.2"
+
+//==================================================================
+//=============== LIMPA AS PAREDES AO APERTAR CTRL =================
+//==================================================================
+
+//bind ctrl "+duck;r_cleardecals"
+bind mouse3 ''+attack; r_cleardecals'' 
+
+//==================================================================
+//=============== COMANDO GERAIS ===================================
+//==================================================================
+
+con_enable "1"
+gameinstructor_enable "0"
+cl_showhelp "0"
+cl_autohelp "0"
+cl_disablefreezecam "1"
+cl_disablehtmlmotd "1"
+viewmodel_recoil "0"
+
+//==================================================================
+//=============== COMANDOS PARA O MOUSE ============================
+//==================================================================
+
+m_rawinput "1"
+m_mouseaccel2 "0" 
+m_mouseaccel1 "0"
+m_customaccel "0"
+m_mousespeed "0"
+
+//==================================================================
+//=============== COMANDOS PARA O RADAR ============================
+//==================================================================
+
+cl_radar_always_centered "0"
+cl_radar_icon_scale_min "0.7"
+cl_radar_rotate "1"
+cl_radar_scale "0.3"
+cl_hud_radar_scale "1"
+cl_idealpitchscale "0.8"
+cl_inv_showdividerline "0"
+cl_inventory_saved_filter "all"
+
+//==================================================================
+//=============== SENSIBILIDADE ====================================
+//==================================================================
+
+sensitivity "1.4"
+
+//==================================================================
+//=============== COMANDOS PARA O FPS/INFORMAÇÕES ==================
+//==================================================================
+
+net_graphheight "64"
+net_graphholdsvframerate "0"
+net_graphmsecs "400"
+net_graphpos "1"
+net_graphproportionalfont "0"
+net_graphshowinterp "1"
+net_graphshowlatency "1"
+net_graphshowsvframerate "0"
+net_graphsolid "1"
+net_graphtext "1"
+net_maxroutable "1200"
+net_scale "5"
+net_steamcnx_allowrelay "1"
+
+//==================================================================
+//=============== COMANDOS DE CONEXÃO  =============================
+//==================================================================
+
+cl_interp "0"
+cl_interp_ratio "1"
+cl_interpolate "1"
+cl_cmdrate "128"
+cl_updaterate "128"
+rate "786432"
+cl_lagcompensation "1"
+cl_predictweapons "1"
+cl_predict "1"
+
+//==================================================================
+//=========== SABER QUANTO TIROU DE HP DO INIMIGO ==================
+//================= F5 PRA LIGAR/DESLIGAR ==========================
+//==================================================================
+
+alias displaydamage "displaydamage_on"
+alias displaydamage_on "con_filter_text Damage Given To; con_filter_text_out Player:; con_filter_enable 2; developer 1; playvol buttons\blip1 0.5; alias displaydamage "displaydamage_off""
+alias displaydamage_off "con_filter_enable 0; developer 0; playvol buttons\blip2 0.5; alias displaydamage "displaydamage_on""
+bind "f5" "displaydamage"
+
+//==================================================================
+//================ DEIXAR O FPS SEM LIMITADOR ======================
+//==================================================================
+
+fps_max "0"
+
+//====================================================================
+//===================== BIND DA PIROQUINHA ===========================
+//=================== NÃO USE NA GC, DA BAN ==========================
+//====================================================================
+bind "P" "say Ɑ͞ ̶͞ ̶͞ ̶̶͞ ﻝﮞ"
+
+//==================================================================
+//=============== OUTROS E INFOS  ==================================
+//==================================================================
+
+echo "Lembre-se de adicionar as seguintes opções de inicializações:"
+echo "+exec ari.cfg cfg -novid -high"
+
+clear
+echo "4RCH CONFIG <3"
