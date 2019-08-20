@@ -43,6 +43,8 @@ cl_autohelp "0"
 cl_disablefreezecam "1"
 cl_disablehtmlmotd "1"
 viewmodel_recoil "0"
+// Retirar fumaça da arma
+gunsmoke 0
 
 //==================================================================
 //=============== COMANDOS PARA O MOUSE ============================
@@ -120,6 +122,14 @@ bind "f5" "displaydamage"
 //==================================================================
 
 fps_max "0"
+
+//==================================================================
+//================ AUMENTA O VOLUME ENQUANTO ANDA NO SHIFT =========
+//==================================================================
+
+alias +walkvol "incrementvar volume 0 1 0.5;+speed"
+alias -walkvol "incrementvar volume 0 1 -0.5;-speed"  
+bind shift +walkvol
 
 //====================================================================
 //===================== BIND DA PIROQUINHA ===========================
